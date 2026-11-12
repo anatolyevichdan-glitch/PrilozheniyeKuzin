@@ -1,0 +1,10 @@
+<resources>
+    <color name="ink">#253044</color>
+    <color name="muted">#64748B</color>
+    <color name="canvas">#F7F8FA</color>
+    <color name="card">#EAF0F5</color>
+    <color name="accent">#3E6F78</color>
+    <color name="offline">#A7B0BA</color>
+    <color name="online">#48A878</color>
+    <color name="departed">#D9786C</color>
+</resources>

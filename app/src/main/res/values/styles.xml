@@ -1,0 +1,17 @@
+<resources>
+    <style name="AppTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:statusBarColor">@color/accent</item>
+        <item name="android:navigationBarColor">@color/ink</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@color/canvas</item>
+    </style>
+    <style name="BaseContainer"><item name="android:layout_margin">5dp</item></style>
+    <style name="NameText" parent="BaseContainer">
+        <item name="android:textSize">24sp</item><item name="android:textColor">@color/ink</item>
+    </style>
+    <style name="StateText" parent="BaseContainer">
+        <item name="android:textSize">14sp</item><item name="android:textColor">@color/muted</item>
+    </style>
+</resources>

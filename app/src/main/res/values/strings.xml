@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Пользователи</string>
+    <string name="choose_user">Выберите пользователя</string>
+    <string name="back">Назад</string>
+    <string name="edit">Редактировать</string>
+    <string name="save">Сохранить</string>
+    <string name="name_hint">Имя</string>
+    <string name="state_hint">Статус</string>
+    <string name="age_hint">Возраст</string>
+    <string name="age_value">Возраст: %1$d</string>
+</resources>
