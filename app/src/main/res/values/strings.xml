@@ -8,4 +8,23 @@
     <string name="state_hint">Статус</string>
     <string name="age_hint">Возраст</string>
     <string name="age_value">Возраст: %1$d</string>
+    <string name="loading">Загрузка профиля…</string>
+    <string name="loading_logo">Эмблема загрузки</string>
+    <string name="sign_in_title">С возвращением!</string>
+    <string name="sign_up_title">Новый профиль</string>
+    <string name="sign_in">Войти</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="login_hint">Электронная почта</string>
+    <string name="password_hint">Пароль</string>
+    <string name="empty_fields">Заполните все обязательные поля</string>
+    <string name="invalid_credentials">Неверная почта или пароль</string>
+    <string name="user_exists">Пользователь с такой почтой уже существует</string>
+    <string name="network_error">Нет связи с сервером. Проверьте интернет</string>
+    <string name="auth_error">Не удалось выполнить вход. Попробуйте ещё раз</string>
+    <string name="weak_password">Пароль должен содержать не менее 6 символов</string>
+    <string name="invalid_email">Введите корректную электронную почту</string>
+    <string name="profile_error">Не удалось сохранить или загрузить профиль</string>
+    <string name="sign_up_tab">Регистрация</string>
+    <string name="retry">Повторить</string>
+    <string name="sign_out">Выйти из аккаунта</string>
 </resources>
