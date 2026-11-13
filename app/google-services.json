@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "597913915",
+    "project_id": "kuzinpractice16",
+    "storage_bucket": "kuzinpractice16.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597913915:android:408f3c73d9a10a8a71c71e",
+        "android_client_info": {
+          "package_name": "ru.kuzin.practice16"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcbVjqdNfPnLidAhh7NAqzHWpv29a09vM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

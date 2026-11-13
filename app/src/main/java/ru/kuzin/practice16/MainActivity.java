@@ -11,6 +11,8 @@ import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends Activity {
     private FrameLayout userPanel;
     private TextView nameTextView, stateTextView, ageTextView;
@@ -20,6 +22,16 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (FirebaseAuth.getInstance().getCurrentUser() == null) {
+            startActivity(new Intent(this, SignActivity.class));
+            finish();
+            return;
+        }
+        if (UserStaticInfo.profileId == null || !UserStaticInfo.profileId.equals(FirebaseAuth.getInstance().getCurrentUser().getUid())) {
+            startActivity(new Intent(this, LoadedUserDataActivity.class));
+            finish();
+            return;
+        }
         setContentView(R.layout.activity_main);
         new UserStaticInfo();
         userPanel = findViewById(R.id.userPanel);
@@ -57,6 +69,14 @@ public class MainActivity extends Activity {
         nameTextView.setText(user.getName());
         stateTextView.setText(user.getState());
         ageTextView.setText(getString(R.string.age_value, user.getAge()));
+    }
+
+    public void SignOut(View view) {
+        FirebaseAuth.getInstance().signOut();
+        UserStaticInfo.users.clear();
+        UserStaticInfo.profileId = null;
+        startActivity(new Intent(this, SignActivity.class));
+        finish();
     }
 
     public void BackToList(View view) {

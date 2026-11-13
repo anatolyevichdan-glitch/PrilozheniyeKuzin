@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserStaticInfo {
+    public static String profileId;
     public static final String POSITION = "position";
     public static final List<User> users = new ArrayList<>();
 
